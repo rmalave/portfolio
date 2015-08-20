@@ -1,0 +1,178 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'normalize';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+@font-face {
+  font-family: 'Aileron';
+  src:font-url('Aileron-Ultralight.otf') format('otf');
+}
+
+* {
+  color: #8997A0;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+html, body {
+  font-family: 'Aileron', sans-serif;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+#navbar {
+   height: 77px;
+   .logo {
+     img {
+     width: 40px;
+     position: absolute;
+     top: 1.5em;
+     left: 3em;
+
+     }
+   }
+ ul {
+    list-style: none;
+    text-align: right;
+    padding: 1.5em 2.5em;
+    margin: 0;
+ }
+ li {
+   padding: 0 .5em;
+   display: inline-block;
+   a {
+     font-size: 0.8rem;
+     text-transform: uppercase;
+     font-weight: 200;
+      color: #9EAFBA;
+      text-decoration: none;
+      transition: all .4s ease;
+      &:hover {
+        color: #57E2DD;
+  }
+ }
+ }
+ .active {
+   a {
+     color: 57E2DD;
+}
+ }
+}
+
+#banner {
+   width: 100%;
+   text-align: center;
+   background-position: 0px 0px;
+}
+
+.wrapper {
+  width: 75%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  left: 13%;
+}
+
+.sub-title, .title, .responsive-break {
+  animation-duration: 2s;
+  animation-name: slideup;
+  letter-spacing: 8px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 5%;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0);
+  }
+
+  to {
+    margin-top: 2%;
+    letter-spacing: 8px;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.homepage-banner {
+}
+
+#main-content {
+  margin: 20px; 
+ }
+
+ #page_wrapper {
+   padding: 3em;
+   #profile_image {
+    width: 300px;
+    float: left;
+    margin-right: 2em;
+    img {
+      width: 100%;
+      border-radius: 100%;
+   }
+  }
+  #content {
+
+  }
+
+ }
+
+footer {
+  position: absolute;
+  bottom: -1000px;
+   height: 77px;
+   width: 100%;
+   .logo {
+     img {
+     width: 40px;
+     position: absolute;
+     bottom: 1.5em;
+     left: 3em;
+
+     }
+   }
+ ul {
+    list-style: none;
+    text-align: right;
+    padding: 1.5em 2.5em;
+    margin: 0;
+ }
+ li {
+   padding: 0 .5em;
+   display: inline-block;
+   a {
+     font-size: 0.8rem;
+     text-transform: uppercase;
+     font-weight: 200;
+     color: #9EAFBA;
+     text-decoration: none;
+     transition: all .4s ease;
+     &:hover {
+       color: #57E2DD;
+     }
+   }
+  }
+}

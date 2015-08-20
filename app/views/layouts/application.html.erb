@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+<title><%= yield(:title) %> | Rafael Malave</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+<body>
+  <div id="navbar">
+
+    <div class="logo">
+      <%= link_to root_path do %>
+        <%= image_tag "logo.svg" %>
+      <% end %>
+    </div>
+
+    <ul>
+      <li><%= link_to "About Me", about_path %>
+      <li><%= link_to "Contact", contact_path %>
+    </ul>
+
+  </div>
+
+  <div id="main_content">
+    <div id="header">
+
+    </div>
+
+    <%= yield %>
+
+  </div>
+  <footer>
+    <div class="logo">
+      <%= link_to root_path do %> 
+        <%= image_tag "logo.svg" %>
+      <% end %>
+    </div>
+
+    <ul>
+      <a href="https://twitter.com/rmalave"><li class="fa fa-twitter"></li></a>
+      <a href="https://instagram.com/rmalave"><li class="fa fa-instagram"></li></a>
+      <a href="https://github.com/rmalave"><li class="fa fa-github"></li></a>
+      <a href="mailto:hey@rafaelmalave.me"><li class="fa fa-paper-plane"></li></a>
+    </ul>
+  </footer>
+
 
 </body>
 </html>

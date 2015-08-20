@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'static_pages/Home'
-
-  get 'static_pages/Contact'
+  root 'static_pages#home'
+  get '/home',    to: 'static_pages#home'
+  get '/contact', to: 'static_pages#contact'
+  get '/about',   to: 'static_pages#about'
 
   get 'portfolio/index'
-  resources :projects
-  root 'portfolio#index'
+
 
 end
   # The priority is based upon order of creation: first created -> highest priority.
