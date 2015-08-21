@@ -39,140 +39,141 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
 }
 
-#navbar {
-   height: 77px;
-   .logo {
-     img {
-     width: 40px;
-     position: absolute;
-     top: 1.5em;
-     left: 3em;
 
+  #navbar {
+     height: 77px;
+     .logo {
+       img {
+       width: 40px;
+       position: absolute;
+       top: 1.5em;
+       left: 3em;
+
+       }
      }
+   ul {
+      list-style: none;
+      text-align: right;
+      padding: 1.5em 2.5em;
+      margin: 0;
    }
- ul {
-    list-style: none;
-    text-align: right;
-    padding: 1.5em 2.5em;
-    margin: 0;
- }
- li {
-   padding: 0 .5em;
-   display: inline-block;
-   a {
-     font-size: 0.8rem;
-     text-transform: uppercase;
-     font-weight: 200;
-      color: #9EAFBA;
-      text-decoration: none;
-      transition: all .4s ease;
-      &:hover {
-        color: #57E2DD;
-  }
- }
- }
- .active {
-   a {
-     color: 57E2DD;
-}
- }
-}
-
-#banner {
-   width: 100%;
-   text-align: center;
-   background-position: 0px 0px;
-}
-
-.wrapper {
-  width: 75%;
-  max-width: 1170px;
-  margin: 0 auto;
-  position: absolute;
-  text-align: center;
-  left: 13%;
-}
-
-.sub-title, .title, .responsive-break {
-  animation-duration: 2s;
-  animation-name: slideup;
-  letter-spacing: 8px;
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 5%;
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0);
-  }
-
-  to {
-    margin-top: 2%;
-    letter-spacing: 8px;
-    color: rgba(255, 255, 255, 1);
-  }
-}
-
-.homepage-banner {
-}
-
-#main-content {
-  margin: 20px; 
- }
-
- #page_wrapper {
-   padding: 3em;
-   #profile_image {
-    width: 300px;
-    float: left;
-    margin-right: 2em;
-    img {
-      width: 100%;
-      border-radius: 100%;
+   li {
+     padding: 0 .5em;
+     display: inline-block;
+     a {
+       font-size: 0.8em;
+       text-transform: uppercase;
+       font-weight: 200;
+        color: #9EAFBA;
+        text-decoration: none;
+        transition: all .4s ease;
+        &:hover {
+          color: #57E2DD;
+    }
    }
-  }
-  #content {
-
-  }
-
- }
-
-footer {
-  position: absolute;
-  bottom: -1000px;
-   height: 77px;
-   width: 100%;
-   .logo {
-     img {
-     width: 40px;
-     position: absolute;
-     bottom: 1.5em;
-     left: 3em;
-
-     }
    }
- ul {
-    list-style: none;
-    text-align: right;
-    padding: 1.5em 2.5em;
-    margin: 0;
- }
- li {
-   padding: 0 .5em;
-   display: inline-block;
-   a {
-     font-size: 0.8rem;
-     text-transform: uppercase;
-     font-weight: 200;
-     color: #9EAFBA;
-     text-decoration: none;
-     transition: all .4s ease;
-     &:hover {
+   .active {
+     a {
        color: #57E2DD;
-     }
+  }
    }
   }
-}
+
+  #banner {
+     width: 100%;
+     text-align: center;
+     background-position: 0px 0px;
+  }
+
+  .wrapper {
+    width: 75%;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    left: 13%;
+  }
+
+  .sub-title, .title, .responsive-break {
+    animation-duration: 2s;
+    animation-name: slideup;
+    letter-spacing: 8px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  @keyframes slideup {
+    from {
+      margin-top: 5%;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0);
+    }
+
+    to {
+      margin-top: 2%;
+      letter-spacing: 8px;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .homepage-banner {
+  }
+
+  #main-content {
+    margin: 20px; 
+   }
+
+   #page_wrapper {
+     padding: 3em;
+     #profile_image {
+      width: 300px;
+      float: left;
+      margin-right: 2em;
+      img {
+        width: 100%;
+        border-radius: 100%;
+     }
+    }
+    #content {
+
+    }
+
+   }
+
+  footer {
+    position: absolute;
+    bottom: -1000px;
+     height: 77px;
+     width: 100%;
+     .logo {
+       img {
+       width: 40px;
+       position: absolute;
+       bottom: 1.5em;
+       left: 3em;
+
+       }
+     }
+   ul {
+      list-style: none;
+      text-align: right;
+      padding: 1.5em 2.5em;
+      margin: 0;
+   }
+   li {
+     padding: 0 .5em;
+     display: inline-block;
+     a {
+       font-size: 0.8rem;
+       text-transform: uppercase;
+       font-weight: 200;
+       color: #9EAFBA;
+       text-decoration: none;
+       transition: all .4s ease;
+       &:hover {
+         color: #57E2DD;
+       }
+     }
+    }
+  }
