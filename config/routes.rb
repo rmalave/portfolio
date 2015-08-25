@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
+  get 'users/new'
+
   resources :works
-  devise_for :users, :skip => :registrations
   root 'static_pages#home'
   get '/home',    to: 'static_pages#home'
   get '/contact', to: 'static_pages#contact'
   get '/about',   to: 'static_pages#about'
-  get '/sign_in', to: 'devise/sessions#new'
 
   get 'portfolio/index'
 

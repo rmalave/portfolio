@@ -20,9 +20,6 @@
     <ul>
       <li><%= link_to "About Me", about_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
-      <% if user_signed_in? %>
-        <li><%= link_to( "Logout", destroy_user_session_path, method: :delete ) %></li>
-      <% end %>
     </ul>
 
   </div>
