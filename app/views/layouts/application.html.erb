@@ -20,6 +20,9 @@
     <ul>
       <li><%= link_to "About Me", about_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
+      <% if logged_in? %>
+        <li><%= link_to "Logout", logout_path, method: "delete" %></li>
+      <% end %>
     </ul>
 
   </div>

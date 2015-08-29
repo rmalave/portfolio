@@ -1,34 +1,36 @@
 <% provide(:title, 'Sign up') %>
 <div id="page_wrapper">
-<h1>Sign up</h1>
+  <h1>Sign up</h1>
 
+  <div class="form">
     <%= form_for(@user) do |f| %>
-      <%= render 'shared/error_messages' %>
+    <%= render 'shared/error_messages' %>
 
-      <div class="field">
-        <%= f.label :name %><br>
-        <%= f.text_field :name %>
-      </div>
-      <br>
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+    <br>
 
-      <div class="field">
-        <%= f.label :email %><br>
-        <%= f.email_field :email %>
-      </div>
-      <br>
+    <div class="field">
+      <%= f.label :email %><br>
+      <%= f.email_field :email %>
+    </div>
+    <br>
 
-      <div class="field">
-        <%= f.label :password %><br>
-        <%= f.password_field :password %>
-      </div>
-      <br>
+    <div class="field">
+      <%= f.label :password %><br>
+      <%= f.password_field :password %>
+    </div>
+    <br>
 
-      <div class="field">
-        <%= f.label :password_confirmation, "Confirmation" %><br>
-        <%= f.password_field :password_confirmation %>
-      </div>
-      <br>
+    <div class="field">
+      <%= f.label :password_confirmation, "Confirmation" %><br>
+      <%= f.password_field :password_confirmation %>
+    </div>
+    <br>
 
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <%= f.submit "Create my account", class: "btn btn-primary" %>
     <% end %>
+  </div>
 </div>
