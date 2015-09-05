@@ -1,0 +1,19 @@
+<div id="header">
+  <div id="navbar">
+    <div class="logo">
+      <%= link_to root_path do %>
+      <%= image_tag "logo.svg" %>
+      <% end %>
+    </div>
+
+    <ul>
+      <li class="fa fa-bars menu-icon"></li>
+      <li class="dropdown-hide"><%= link_to "About Me", about_path %></li>
+      <li class="dropdown-hide"><%= link_to "Contact", contact_path %></li>
+      <% if logged_in? %>
+        <li class="dropdown-hide"><%= link_to "Logout", logout_path, method: "delete" %></li>
+        <li class="dropdown-hide"><%= link_to "Add Work", new_work_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

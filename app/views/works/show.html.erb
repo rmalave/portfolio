@@ -1,14 +1,14 @@
-<p id="notice"><%= notice %></p>
+<div id="works_content">
+  <h1 class="title">
+    <strong>Title:</strong>
+    <%= @work.title %>
+  </h1>
+  <%= image_tag @work.image.url %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @work.title %>
-</p>
+  <p>
+    <%= @work.description %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @work.description %>
-</p>
-
-<%= link_to 'Edit', edit_work_path(@work) %> |
-<%= link_to 'Back', works_path %>
+  <%= link_to 'Edit', edit_work_path(@work) %> |
+  <%= link_to 'Back', works_path %>
+</div>

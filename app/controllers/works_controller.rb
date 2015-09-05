@@ -17,14 +17,11 @@ class WorksController < ApplicationController
 
   def create
     @work = Work.new(work_params)
-
     if @work.save
       redirect_to @work, notice: 'Work was successfully created.' 
-      render :show, status: :created, location: @work 
     else
       render :new
     end
-
   end
 
   def update
@@ -53,6 +50,6 @@ class WorksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def work_params
-      params.require(:work).permit(:title, :description)
+      params.require(:work).permit(:title, :description, :image)
     end
 end

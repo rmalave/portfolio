@@ -1,3 +1,55 @@
 // Place all the styles related to the works controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'variables';
+
+
+#title {
+  text-align: center;
+}
+
+#work-section {
+  display: block;
+  padding: 1em;
+  border-bottom: 1px solid #F3F3F3;
+  ul {
+    list-style: none;
+    padding: 0;
+ }
+  .work-image {
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1em;
+    }
+  }
+  .work-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    position: relative;
+    div {
+      width: 6em;
+  }
+}
+ .work-description {
+   position: relative;
+ }
+}
+
+.work-links {
+  padding-bottom: 1em;
+  ul {
+    text-align: center;
+  }
+}
+
+.work-link {
+  display: inline-block;
+  float: left;
+  margin-left: 1em;
+  a {
+    text-decoration: none;
+    color: $green;
+}
+}

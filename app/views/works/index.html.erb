@@ -1,29 +1,39 @@
-<p id="notice"><%= notice %></p>
+<% provide(:title, 'Home') %>
+<div class="banner-container">
+  <!--  <div class="wrapper">
+    <h1 class="title">Hi!,
+      <span class="responsive-break">
+        I'm Rafael Malave
+      </span>
+    </h1>
+    <h2 class="sub-title">I'm a web developer. I love to build things for
+      the web.
+    </h2>
 
-<h1>Listing Works</h1>
+  </div> -->
+  <div id="banner" class="homepage-banner">
+    <%= image_tag "banner.svg" %>
+  </div>
+</div>
+<div id="page-wrapper">
+  <h1 id="title">Some of My Work</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @works.each do |work| %>
-      <tr>
-        <td><%= work.title %></td>
-        <td><%= work.description %></td>
-        <td><%= link_to 'Show', work %></td>
-        <td><%= link_to 'Edit', edit_work_path(work) %></td>
-        <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Work', new_work_path %>
+  <% @works.each do |work| %>
+  <section id="work-section">
+      <ul id="work-content">
+        <li class="work-title"><div><%= work.title %></div></li>
+        <li class="work-image"><%= image_tag work.image.url %></li>
+        <li class="work-description"><div><%= work.description %></div></li>
+      </ul>
+      <% if logged_in? %>
+      <div class="work-links">
+        <ul>
+          <li class="work-link"><%= link_to 'Show', work %></li>
+          <li class="work-link"><%= link_to 'Edit', edit_work_path(work) %></li>
+          <li class="work-link"><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        </ul>
+      </div>
+      <% end %>
+  </section>
+  <% end %>
+</div>
