@@ -21,9 +21,9 @@
   <% @works.each do |work| %>
   <section id="work-section">
       <ul id="work-content">
-        <li class="work-title"><div><%= work.title %></div></li>
+        <li class="work-title"><div><h2><%= work.title %></h2></div></li>
         <li class="work-image"><%= image_tag work.image.url %></li>
-        <li class="work-description"><div><%= work.description %></div></li>
+        <li class="work-description"><p><%= work.description %><p></li>
       </ul>
       <% if logged_in? %>
       <div class="work-links">

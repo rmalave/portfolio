@@ -12,7 +12,6 @@
 #work-section {
   display: block;
   padding: 1em;
-  border-bottom: 1px solid #F3F3F3;
   ul {
     list-style: none;
     padding: 0;
@@ -52,4 +51,141 @@
     text-decoration: none;
     color: $green;
 }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+
+  #title {
+    font-size: 4em;
+  }
+
+  #page-wrapper #work-section:nth-child(even) {
+    background-color: $section-background;
+    padding: 6em 14em;
+    position: relative;
+
+  .work-title {
+    margin-bottom: 0;
+    div {
+      width: 20em !important;
+  }
+    h2 {
+      font-size: 1em;
+    }
+  }
+
+  .work-image {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: -4em;
+  }
+
+  .work-description {
+    display: inline-block;
+    width: 23em;
+    p {
+      font-size: 1em;
+      line-height: 1.4;
+    }
+  }
+}
+  #page-wrapper #work-section:nth-child(odd) {
+    background-color: white;
+    padding: 6em 14em;
+    position: relative;
+    .work-title {
+      margin-bottom: 0;
+      text-align: center;
+      div {
+        width: 100%;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .work-image {
+      text-align: center;
+      img {
+        max-width: 40%;
+      }
+    }
+    .work-description {
+      text-align: center;
+      p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+  }
+  }
+}
+
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+
+  #title {
+    font-size: 4em;
+  }
+
+  #page-wrapper #work-section:nth-child(even) {
+    background-color: $section-background;
+    padding: 6em 20em;
+    position: relative;
+
+  .work-title { 
+    margin-bottom: 0;
+    div {
+      width: 20em !important;
+  }
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+
+  .work-image {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: -4em;
+  }
+
+  .work-description {
+    display: inline-block;
+    width: 23em;
+    p {
+      font-size: 1em;
+      line-height: 1.4;
+    }
+  }
+}
+  #page-wrapper #work-section:nth-child(odd) {
+    background-color: white;
+    padding: 6em 8em;
+    position: relative;
+    .work-title {
+      margin-bottom: 0;
+      text-align: center;
+      div {
+        width: 100%;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .work-image {
+      text-align: center;
+      img {
+        max-width: 40%;
+      }
+    }
+    .work-description {
+      text-align: center;
+      p {
+        font-size: 1em;
+        line-height: 1.4;
+     }
+    }
+  }
 }
